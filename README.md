@@ -1,4 +1,4 @@
-# UseMobile-Challenge1
+# UseAcademy-Challenge1
 
 
 Demonstração:
