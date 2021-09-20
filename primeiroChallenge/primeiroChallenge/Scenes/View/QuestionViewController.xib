@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController" customModule="primeiroChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonStyle" destination="kdR-kG-FAq" id="LIq-FU-FyX"/>
+                <outlet property="labelStyle" destination="k41-0e-K9o" id="qra-E9-0hU"/>
+                <outlet property="questionLabel" destination="k41-0e-K9o" id="dna-RV-G2l"/>
+                <outlet property="tableView" destination="phU-sb-ln5" id="E2t-ZK-cqW"/>
+                <outlet property="view" destination="P2h-EN-VXB" id="X8W-ET-ozC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="P2h-EN-VXB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="phU-sb-ln5">
+                    <rect key="frame" x="15" y="129" width="344" height="441"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Respostas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJj-lG-9Fn">
+                    <rect key="frame" x="37" y="93" width="83.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.42745098040000001" green="0.53725490200000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual a linguagem de programação da Apple?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k41-0e-K9o">
+                    <rect key="frame" x="37" y="26" width="302" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdR-kG-FAq">
+                    <rect key="frame" x="40" y="606" width="296" height="50"/>
+                    <color key="backgroundColor" red="0.82745098039999998" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="F8d-LY-N05"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <state key="normal" title="Responder">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="Nos-2V-07r"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="d69-x9-Sh3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="phU-sb-ln5" firstAttribute="leading" secondItem="d69-x9-Sh3" secondAttribute="leading" constant="15" id="0lB-sv-BYF"/>
+                <constraint firstItem="WJj-lG-9Fn" firstAttribute="top" secondItem="k41-0e-K9o" secondAttribute="bottom" constant="26" id="6FS-uv-NSv"/>
+                <constraint firstItem="d69-x9-Sh3" firstAttribute="bottom" secondItem="kdR-kG-FAq" secondAttribute="bottom" constant="11" id="C2h-7U-KD1"/>
+                <constraint firstItem="phU-sb-ln5" firstAttribute="top" secondItem="WJj-lG-9Fn" secondAttribute="bottom" constant="15" id="NGM-wL-3MN"/>
+                <constraint firstItem="k41-0e-K9o" firstAttribute="top" secondItem="d69-x9-Sh3" secondAttribute="top" constant="26" id="OA8-le-Chk"/>
+                <constraint firstItem="WJj-lG-9Fn" firstAttribute="leading" secondItem="d69-x9-Sh3" secondAttribute="leading" constant="37" id="OpZ-vr-8tS"/>
+                <constraint firstItem="kdR-kG-FAq" firstAttribute="top" secondItem="phU-sb-ln5" secondAttribute="bottom" constant="36" id="PIY-B0-d6U"/>
+                <constraint firstItem="k41-0e-K9o" firstAttribute="leading" secondItem="d69-x9-Sh3" secondAttribute="leading" constant="37" id="WcL-zi-bAa"/>
+                <constraint firstItem="kdR-kG-FAq" firstAttribute="leading" secondItem="d69-x9-Sh3" secondAttribute="leading" constant="40" id="fFe-Ma-dIw"/>
+                <constraint firstItem="d69-x9-Sh3" firstAttribute="trailing" secondItem="k41-0e-K9o" secondAttribute="trailing" constant="36" id="mQV-hm-dub"/>
+                <constraint firstItem="d69-x9-Sh3" firstAttribute="trailing" secondItem="phU-sb-ln5" secondAttribute="trailing" constant="16" id="w3Y-Ur-7ve"/>
+                <constraint firstItem="d69-x9-Sh3" firstAttribute="trailing" secondItem="kdR-kG-FAq" secondAttribute="trailing" constant="39" id="xtN-tw-mDf"/>
+            </constraints>
+            <point key="canvasLocation" x="130.40000000000001" y="108.39580209895054"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
